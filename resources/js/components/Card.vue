@@ -25,7 +25,7 @@
 
                 <div class="flex">
                     <div v-if="errors">
-                        <p class="text-danger mb-1" v-for="error in errors">{{error[0]}}</p>
+                        <p class="text-danger mb-1" v-for="error in errors" v-html="error[0]"></p>
                     </div>
                     <button
                         :disabled="working"
